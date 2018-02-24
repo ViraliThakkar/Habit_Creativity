@@ -1,0 +1,174 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="Create.js"></script>
+    <script>
+// Set the date we're counting down to
+
+</script>
+<script>
+
+</script>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+            .demo
+{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 10px;
+  border-radius: 3px;
+}
+/* The c
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+</style>
+    <style>
+.one{
+
+}
+
+.hidden {
+    visibility: hidden
+}
+        .fuck1{
+             margin-top: 3cm;
+            display:inline-block;
+            float:left;
+            width:50%;
+    padding: 10px;
+        
+  border-right: 1px dotted black;
+        }        
+                .fuck2{
+                     margin-top: 3cm;
+                    float:right;
+            display:inline-block;
+            width:50%;
+       
+vertical-align: middle;
+    padding: 10px;
+        }    
+        body {
+   background-image: url("kite.jpg");
+
+}
+        .btn{
+            
+            
+position:relative;
+bottom:0;
+        }
+</style>
+</head>
+<body ng-app="myApp">
+   
+    <div class=".hh">
+    <div ng-controller="myCtrl" class="fuck1" align="center" >
+        
+        <table>
+            <tr>
+                <td><input type="button" class="w3-button w3-xxxlarge w3-circle w3-black"  ng-click="foo($event)" value="1" id="1"></td>&nbsp;
+                <td><input type="button" class="w3-button w3-xxxlarge w3-circle w3-black"  ng-click="foo($event)" value="2" id="2" disabled></td>
+                <td><input type="button" class="w3-button w3-xxxlarge w3-circle w3-black"  ng-click="foo($event)" value="3" id="3" disabled>
+                </td>
+            </tr>
+            <tr >
+                <td><input type="button" class="w3-button w3-xxxlarge w3-circle w3-black"  ng-click="foo($event)" value="4" id="4" disabled></td>
+                <td><input type="button" class="w3-button w3-xxxlarge w3-circle w3-black"  ng-click="foo($event)" value="5" id="5" disabled></td>
+                <td><input type="button" class="w3-button w3-xxxlarge w3-circle w3-black"  ng-click="foo($event)" value="6" id="6" disabled>
+                </td>
+            </tr>
+             <tr>
+                <td><input type="button" class="w3-button w3-xxxlarge w3-circle w3-black"  ng-click="foo($event)" value="7" id="7" disabled></td>
+                <td><input type="button" class="w3-button w3-xxxlarge w3-circle w3-black"  ng-click="foo($event)" value="8" id="8" disabled></td>
+                <td><input type="button" class="w3-button w3-xxxlarge w3-circle w3-black"  ng-click="foo($event)" value="9" id="9" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" class="w3-button w3-xxxlarge w3-circle w3-black"  ng-click="foo($event)" value="0" id="0" disabled></td>
+<td></td>
+            </tr>
+        </table>
+       
+       <!-- <input type="text" value="" id="text1" onchange="foo1()"/>-->
+    </div> 
+    </div>
+    <div ng-controller="myCtrl" class="fuck2" align="center">
+    
+     <textarea id="text1" rows="15" cols="40" onchange="foo1()" disabled></textarea>
+    </div>
+    <center>
+    <div><h1 id="demo"></h1></div>
+    </center>
+    <button style="position: absolute; left: 47%; right: 20%; bottom: 5%;"> Submit </button>
+</body>

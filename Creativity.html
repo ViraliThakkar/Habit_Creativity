@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="Create.js"></script>
+    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+    
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<script src="dist/circletimer.min.js"></script>
+
+<link href="dist/circletimer.css" rel="stylesheet">
+    <script>
+// Set the date we're counting down to
+
+</script>
+<script>
+
+</script>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+            .demo
+{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 10px;
+  border-radius: 3px;
+}
+/* The c
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+</style>
+    <style>
+        
+                html {
+    height: 100%;
+    background-color: cyan;
+}
+
+
+.one{
+
+}
+
+.hidden {
+    visibility: hidden
+}
+        .fuck1{
+             margin-top: 3cm;
+            display:inline-block;
+            float:left;
+            width:50%;
+    padding: 10px;
+        
+  border-right: 1px dotted black;
+        }        
+                .fuck2{
+                     
+                    float:right;
+            display:inline-block;
+            width:50%;
+       
+vertical-align: middle;
+    padding: 10px;
+    position: fixed;
+  
+    width: 50%;
+    height: 100%;
+    background-color: lightpink;
+    background-repeat: repeat-y;
+        }    
+      
+        .btn{
+            
+            
+position:relative;
+bottom:0;
+        }
+
+
+.item {
+    position: relative;
+    float: left;
+}
+
+.item h2 {
+    text-align:center;
+    position: absolute;
+    line-height: 125px;
+    width: 100%;
+}
+
+svg {
+    transform: rotate(-90deg);
+}
+
+.circle_animation {
+  stroke-dasharray: 440; /* this value is the pixel circumference of the circle */
+  stroke-dashoffset: 440;
+  transition: all 1s linear;
+}
+
+svg {
+  display: block;
+  margin: 5px auto;
+}
+
+#loader 
+{ fill: #0088cc ;
+    border: 2px solid black;
+        border-radius: 64px;
+        stroke: "black";
+        stroke-width: "3"}
+
+#border 
+{ fill: #0088cc;
+    
+        }
+
+        .yellow-button {
+    background-color: "yellow";
+}
+        .default{
+	background:black;
+}
+        .clicked{
+	background:yellow;
+}
+        
+        .box {
+    background-color: #dcdee2;
+    width: 200px;
+    height: 500px;
+    border-radius: 15px;
+    
+}
+
+
+.btn-circle.btn-xl {
+  width: 100px;
+  height: 100px;
+  padding: 10px 16px;
+  font-size: 24px;
+  line-height: 1.33;
+  border-radius: 50px;
+}
+
+        .d1{
+            color: black;
+            text-align: left;
+            white-space: nowrap;
+            overflow: hidden;
+            text-indent: -99999px;
+        }
+        .d2{
+            text-indent: -9000px;
+            text-transform: capitalize;
+            width: 70px;
+        }
+        
+        
+        #screen, #modal {
+    display: none;
+    position: fixed;
+}
+
+#screen {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.25);
+    z-index: 1;
+}
+
+#modal {
+    
+    width: 50%;
+    top: 20%;
+    left:25%;
+    background: white;
+    z-index: 2;
+     
+}
+        #gg{
+            margin: 30px;
+        }
+        h1{
+            font-weight: bold;
+        }
+</style>
+    
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+   
+    <div id="screen"></div>
+<div id="modal" ng-init="yoyo()">
+    <h1 id='gg'><b>Instructions</b></h1>
+    <p id='gg'>You have 15 minutes to complete 5 word generation tasks. As you can see, there are 10 buttons on the left side of the screen. Once you click a button, a word will appear on the right side. Please generate as many things associated with the given word as you can and type your answers into the blank space provided. </p>
+        
+<p id='gg'>Click the ‘Done’ button when you’d like to stop the current task. Then click another button of your choice until you’ve completed a total of 5 tasks. During the 15-minute period, feel free to go back to any previous task. You can edit your answers or add new ones at any time by clicking the corresponding buttons. It’s up to you how you go about completing the 5 tasks.</p>
+ 
+<p id='gg'>
+A timer is located at the bottom right corner. The answers will be saved automatically when time is up. Okay, click the ‘START’ button.
+</p>
+   <!-- <button>x</button>-->
+    <input type="button" onclick="yoyo1()" value="X"/>
+</div>
+    <div class=".hh">
+    <div ng-controller="myCtrl" class="fuck1" align="center" >
+        
+        <table>
+            <tr>
+                <td><input type="button" class="w3-button w3-xxxlarge w3-circle  {{myButton1}} d2"   ng-click="foo($event)" value="1" id="1"></td>&nbsp;
+                <td><input type="button" class="w3-button w3-xxxlarge w3-circle {{myButton2}} d2"   ng-click="foo($event)" value="2" id="2"></td>
+                <td><input type="button" class="w3-button w3-xxxlarge w3-circle {{myButton3}} d2"  ng-click="foo($event)" value="3" id="3">
+                </td>
+            </tr>
+            <tr >
+                <td><input type="button" class="w3-button w3-xxxlarge w3-circle {{myButton4}} d2"  class="{{myButton}}" ng-click="foo($event)" value="4" id="4"></td>
+                <td><input type="button" class="w3-button w3-xxxlarge w3-circle {{myButton5}} d2"  class="{{myButton}}" ng-click="foo($event)" value="5" id="5"></td>
+                <td><input type="button" class="w3-button w3-xxxlarge w3-circle {{myButton6}} d2"  class="{{myButton}}" ng-click="foo($event)" value="6" id="6">
+                </td>
+            </tr>
+             <tr>
+                <td><input type="button" class="w3-button w3-xxxlarge w3-circle {{myButton7}} d2"   class="{{myButton}}"ng-click="foo($event)" value="7" id="7"></td>
+                <td><input type="button" class="w3-button w3-xxxlarge w3-circle {{myButton8}} d2"  class="{{myButton}}" ng-click="foo($event)" value="8" id="8"></td>
+                <td><input type="button" class="w3-button w3-xxxlarge w3-circle {{myButton9}} d2"  class="{{myButton}}" ng-click="foo($event)" value="9" id="9">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" class="w3-button w3-xxxlarge w3-circle {{myButton0}} d2"  class="{{myButton}}" ng-click="foo($event)" value="0" id="0"></td>
+<td></td>
+            </tr>
+        </table>
+       
+       <!-- <input type="text" value="" id="text1" onchange="foo1()"/>-->
+    </div> 
+    </div>
+
+    <div ng-controller="myCtrl" class="fuck2" align="center">
+    <!--<center>
+    <div><h1 id="demo"></h1></div>
+        
+    </center>-->
+        <h1 align="center"  style="position: absolute; top: 10%; left:40%;" id="tpp"></h1>
+     <textarea id="text1" rows="15" cols="40" style="position: absolute; top: 25%; left:20%; right: 10%;" onchange="foo1()" disabled ></textarea>
+        
+    </div>
+    
+    <button  style="position: absolute; left: 47%; right: 20%; bottom: 5%;" onclick="" id="mySubmit" disabled> Submit </button>
+    <!--window.location.href='questionnaire.html'-->
+<div  style="position: absolute; left: 85%; right: 10%; bottom: 1%" >
+   <svg width="100" height="100" viewbox="0 0 250 250">
+       <circle cx="125" cy="125" r="123" stroke= "black" stroke-width= "5" fill="none"/>
+  <path id="border" transform="translate(125, 125)"/>
+  <path id="loader" transform="translate(125, 125) scale(.84)"/>
+</svg>
+</div>
+    
+
+</body>
+
+</html>
